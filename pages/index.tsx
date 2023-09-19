@@ -1,3 +1,10 @@
+import { useEffect } from "react"
+
 export default function Page() {
-  return <h1>Te amo, OGRAMON amante a los emoticones!</h1>
+
+  useEffect(() => {
+    console.log(window)
+  }, [])
+  
+  return <h1>Te amo, Mi preciosa reyna de todas las preciosas por haber y por existir!</h1>
 }
