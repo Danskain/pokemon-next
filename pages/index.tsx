@@ -1,4 +1,14 @@
 import Background  from '../components/background'
+import { Section } from '../components/Section'
 export default function Page() {  
-  return <Background />
+  return (
+    <div>
+      <div className="container">
+        <Section />
+        <Section />
+        <Section />
+      </div>
+      <Background />
+    </div>
+  )
 }

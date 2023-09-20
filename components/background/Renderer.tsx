@@ -3,7 +3,8 @@ import Scene from "./scenes/Scene";
 
 export default class Renderer extends WebGL1Renderer {
   constructor() {
-    super({
+    super(
+      {
         antialias: true,
         canvas: document.getElementById("bg")
       }
