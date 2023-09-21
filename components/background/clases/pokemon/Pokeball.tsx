@@ -20,7 +20,8 @@ export default class Pokeball {
 
     private posicionar() {
         if(window.innerWidth > 900) {
-            const ratio = (window.innerWidth - 900) * 8 / 460 + 14
+            //console.log('window.innerWidth', window.innerWidth)
+            const ratio = (window.innerWidth - 1300) * 8 / 460 + 14
             this.object.translateY(-1)
             this.object.translateX(ratio)
             this.object.translateZ(-23)

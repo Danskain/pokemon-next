@@ -18,7 +18,7 @@ export default class Logo {
     private posicionar() {
         this.object.translateZ(-10)
         if(window.innerWidth > 900) {
-            const ratio = (window.innerWidth - 900) * 3.2 / 460 + 5.6
+            const ratio = (window.innerWidth - 1200) * 3.2 / 460 + 5.6
             this.object.translateY(4)
             this.object.translateX(ratio)
         } else {
