@@ -12,6 +12,7 @@ export default class Logo {
             this.posicionar()
             scene.add(this.object)
         })
+        this.update()
     }
 
     private posicionar() {
@@ -23,5 +24,12 @@ export default class Logo {
         } else {
             this.object.translateY(7)
         }
+    }
+
+    private update() {
+        this.contador += 0.01
+        if(this.object) this.object.rotation.y = Math.sin(this.contador) / 5
+
+        requestAnimationFrame(this.update.bind(this))
     }
 }
