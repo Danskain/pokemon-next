@@ -15,15 +15,15 @@ export default class Zekrom {
     }
 
     private posicionar() {
-        if(window.innerWidth > 900) {
-            const ratio = (window.innerWidth - 900) * -1 / 460 + 0.4
-            this.object.translateZ(36.6)
-            this.object.translateY(0.5)
-            this.object.translateX(ratio)
-        } else {
-            this.object.translateZ(38.5)
-            this.object.translateY(1.8)
-            this.object.translateX(0.4)
-        }
+      if(window.innerWidth > 900) {
+        const ratio = (window.innerWidth - 900) * -1 / 460 + 0.4
+        this.object.translateZ(36.6)
+        this.object.translateY(0.5)
+        this.object.translateX(ratio)
+      } else {
+        this.object.translateZ(38.5)
+        this.object.translateY(1.8)
+        this.object.translateX(0.4)
+      }
     }
 }

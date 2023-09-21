@@ -1,4 +1,4 @@
-import Background from "../components/Background"
+import Background  from "../components/background/index"
 import Section from "../components/Section"
 
 
