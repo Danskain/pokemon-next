@@ -1,7 +1,8 @@
-import React from 'react'
-
-export const Section = () => {
+const Section = () => {
   return (
     <section>Section</section>
   )
 }
+
+
+export default Section
